@@ -1,0 +1,16 @@
+{
+  "name": "hello-rusty",
+  "collaborators": [
+    "Allan Ortiz <aortiz@g2llc.com>"
+  ],
+  "description": null,
+  "version": "0.1.0",
+  "license": null,
+  "repository": null,
+  "files": [
+    "hello_rusty_bg.wasm",
+    "hello_rusty.d.ts"
+  ],
+  "main": "hello_rusty.js",
+  "types": "hello_rusty.d.ts"
+}
