@@ -1,3 +1,3 @@
 /* tslint:disable */
-export function greet(): void;
+export function greet(arg0: string): void;
 
