@@ -23,7 +23,7 @@ export function __wbg_alert_022d7219be685f24(arg0, arg1) {
 let cachedEncoder = new TextEncoder('utf-8');
 
 function passStringToWasm(arg) {
-
+    
     const buf = cachedEncoder.encode(arg);
     const ptr = wasm.__wbindgen_malloc(buf.length);
     getUint8Memory().set(buf, ptr);
@@ -37,11 +37,15 @@ export function greet(arg0) {
     const [ptr0, len0] = passStringToWasm(arg0);
     try {
         return wasm.greet(ptr0, len0);
+        
     } finally {
         wasm.__wbindgen_free(ptr0, len0 * 1);
+        
     }
+    
 }
 
 export function __wbindgen_throw(ptr, len) {
     throw new Error(getStringFromWasm(ptr, len));
 }
+
