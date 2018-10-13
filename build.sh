@@ -1,3 +1,3 @@
 #!/bin/bash
 set -eu
-time wasm-pack init
+time wasm-pack build 
